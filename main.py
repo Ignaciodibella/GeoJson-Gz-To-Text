@@ -15,7 +15,7 @@ with open('output.txt', 'w') as f:
 
 print("Exportación Finalizada")
 
-# Extraer contenido "GeoJson" a kwt's y exportar:
+# Extraer contenido "GeoJson" a wkt's y exportar:
 wkt_geometries = []
 for feature in geojson_data['features']:
     geometry = shape(feature['geometry'])
